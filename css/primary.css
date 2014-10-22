@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'Sinkin Sans';
+	src: url(../fonts/SinkinSans-400Regular.otf);
+}
+
+body {
+	background: rgb(108, 108, 51);
+	color: #fff;
+	font-family: 'Sinkin Sans';
+	margin-top: 50px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #2e2e2e;
+	padding: 10px;
+	border-bottom: 1px solid rgb(60, 56, 56);
+}
+
+.indicator-container {
+	display: block;
+	width: 40px;
+
+	-webkit-transition: margin 0.3s ease;
+	-moz-transition: margin 0.3s ease;
+	-o-transition: margin 0.3s ease;
+	transition: margin 0.3s ease;
+
+	-webkit-transition-delay: 0.4s;
+	-moz-transition-delay: 0.4s;
+	-o-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.indicator {
+	display: block;
+	height: 4px;
+	margin: 3px 0;
+	background: #fff;
+}
+
+.indicator-container.open {
+	margin-left: -20px;
+}
+
+.menu {
+	position: fixed;
+	top: 52px;
+	left: 0;
+	right: 60px;
+
+	background: #2e2e2e;
+
+	height: 100%;
+
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%);
+
+	-webkit-transition: transform 0.4s ease;
+	-moz-transition: transform 0.4s ease;
+	-o-transition: transform 0.4s ease;
+	transition: transform 0.4s ease;
+}
+
+.menu li {
+	padding: 2px 5px;
+}
+
+.menu.open {
+	-webki-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
