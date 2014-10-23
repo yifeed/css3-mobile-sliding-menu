@@ -73,8 +73,8 @@ header {
 	-ms-transform: translateX(-100%);
 	transform: translateX(-100%);
 
-	-webkit-transition: transform 0.4s ease;
-	-moz-transition: transform 0.4s ease;
+	-webkit-transition: -webkit-transform 0.4s ease;
+	-moz-transition: -moz-transform 0.4s ease;
 	-o-transition: transform 0.4s ease;
 	transition: transform 0.4s ease;
 }
@@ -84,7 +84,7 @@ header {
 }
 
 .menu.open {
-	-webki-transform: translateX(0);
+	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
 	-ms-transform: translateX(0);
 	transform: translateX(0);
